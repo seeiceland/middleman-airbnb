@@ -1,0 +1,14 @@
+---
+title: Le Wagon - Middleman - About
+---
+
+
+    <ul class="list-inline text-center">
+      <% data.users.each do |name, gh_username| %>
+        <li>
+           <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username.github_nickname}", class: "img-circle" %>
+            <h3><%= gh_username.name.capitalize %></h3>
+
+        </li>
+      <% end %>
+    </ul>

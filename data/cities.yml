@@ -1,0 +1,19 @@
+rio:
+  name: Rio
+  address: 12 street
+barcelona:
+  name: Barcelona
+  address: 123 street
+paris:
+  name: Paris
+  address: 12 street rue
+rome:
+  name: Rome
+  address: 123 street
+
+
+
+# [
+#   {name: paris => address: ..}
+# ]
+

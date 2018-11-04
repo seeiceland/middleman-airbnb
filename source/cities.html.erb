@@ -1,0 +1,47 @@
+---
+title: Le Wagon - Middleman
+---
+
+<div class="container text-center">
+
+    <h1>Cities</h1>
+
+    <ul class= "list-inline">
+      <% %w(barcelona paris berlin rio).each do |city| %>
+      <li>
+        <img src="https://kitt.lewagon.com/placeholder/cities/<%= city %>" class="img-rounded" height="150px" >
+        <h3><%= city.capitalize %></h3>
+        </li>
+        <% end %>
+    </ul>
+    </div>
+
+
+<div class="container text-center">
+
+    <h1>Cities</h1>
+
+    <div class="row">
+      <% data.cities.each do |city, infos| %>
+      <div class ="col-xs-12 col-sm.4">
+        <div class="card" style="background-image: url('https://kitt.lewagon.com/placeholder/cities/<%= city %>')">
+        <h3><%= infos.name %> </h3>
+        <p><%= infos.address %> </p>
+
+      </div>
+    </div>
+      <% end %>
+  </div>
+  </div>
+
+  <div id="home">
+  <div class="home-content">
+    <%= image_tag "logo.png", width: "200" %>
+    <p>
+      Middleman is now running!
+    </p>
+    <p class="about">
+      <%= link_to "More about this template", "about.html" %>
+    </p>
+  </div>
+</div>
